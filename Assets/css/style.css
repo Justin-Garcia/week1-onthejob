@@ -11,7 +11,7 @@ body {
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #285D76;
     color: #ffffff;
 }
 
@@ -71,11 +71,14 @@ p {
 
 .content {
     width: 75%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-left: 20px;
 }
 
 .benefits {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     padding: 20px;
     clear: both;
