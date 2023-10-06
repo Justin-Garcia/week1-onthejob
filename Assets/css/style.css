@@ -38,6 +38,7 @@ body {
 
 .header div ul li {
     display: inline-block;
+    
     margin-left: 25px;
 }
 
@@ -71,14 +72,12 @@ p {
 
 .content {
     width: 75%;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     margin-left: 20px;
 }
 
 .benefits {
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -140,7 +139,8 @@ p {
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #005B94;
     color: #ffffff;
@@ -149,7 +149,8 @@ p {
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #005B94;
     color: #ffffff;
@@ -158,22 +159,23 @@ p {
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #005B94;
     color: #ffffff;
 }
 
 .search-engine-optimization img {
-    max-height: 200px;
+    max-height: 190px;
 }
 
 .online-reputation-management img {
-    max-height: 200px;
+    max-height: 190px;
 }
 
 .social-media-marketing img {
-    max-height: 200px;
+    max-height: 190px;
 }
 
 .search-engine-optimization h2 {
@@ -201,3 +203,16 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    .benefits {
+      width: 100%;
+      margin: 10px;
+    }
+    .content {
+        width: auto;
+        justify-content: space-around;
+    
+    }
+
+  }
